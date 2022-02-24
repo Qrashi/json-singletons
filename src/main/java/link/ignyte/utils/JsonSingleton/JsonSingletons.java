@@ -25,8 +25,12 @@ public class JsonSingletons {
         // Instantiate gson
         GsonBuilder builder = new GsonBuilder();
         switch (mode) {
-            case ONLY_EXPOSE -> builder.excludeFieldsWithoutExposeAnnotation();
-            case ALL_EXCEPT_TRANSIENT -> builder.excludeFieldsWithModifiers(Modifier.TRANSIENT);
+            case ONLY_EXPOSE: {
+                builder.excludeFieldsWithoutExposeAnnotation();
+            };
+            case ALL_EXCEPT_TRANSIENT: {
+                builder.excludeFieldsWithModifiers(Modifier.TRANSIENT);
+            };
         }
         gson = builder.create();
 
