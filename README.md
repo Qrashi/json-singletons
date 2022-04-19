@@ -1,3 +1,8 @@
+# Project moved to [GitLab](https://gitlab.com/Qrashi/json-singletons)
+This project has been moved to [GitLab](https://gitlab.com/Qrashi/json-singletons)
+
+# The version hosted here is an old and deprecated one
+<br><br><br><br><br><br><br><br>
 # JsonSingletons
 
 JsonSingletons is a small library that makes it easy to automatically deserialize and serialize various classes **using gson**.
